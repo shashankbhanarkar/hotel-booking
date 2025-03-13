@@ -40,7 +40,7 @@ app.use('/api/rooms', roomRoutes);
 app.use(errorHandler);
 
 app.get('/', (req, res) => {  
-  res.send('Hello World!');  
+  res.json('Hello World!');  
 });
 
 // Start the server
