@@ -39,6 +39,10 @@ app.use('/api/rooms', roomRoutes);
 // Middleware to handle errors
 app.use(errorHandler);
 
+app.get('/', (req, res) => {  
+  res.send('Hello World!');  
+});
+
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
